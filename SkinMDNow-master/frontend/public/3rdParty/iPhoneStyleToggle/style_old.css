@@ -1,0 +1,191 @@
+.ui-body-c,.ui-overlay-c{ background:#a5dbff/*#311d68*/!important;}
+#headertop{ background:#311d68; width:100%; height:77px;}
+#custom_header{width:999px; height:auto; margin:0 auto;}
+.footer{width:999px; height:auto; margin:0 auto;color:#ccc;font-size:14px; padding:10px 0 0 0;text-align:center}  
+#pageIndex{min-height:501px;}
+#howitworks{min-height:483px;}
+#pageLogin{min-height:480px;}
+/*#divMaleBody{min-height:458px;}*/
+#divMaleBackBody,#divFemaleBackBody{min-height:478px;}
+#pageCreateNew{min-height:980px;}
+#pageTellUsMore{min-height:900px;}
+#divFemaleBody{min-height:458px;}
+#divMaleBody h2,#divMaleBackBody h2,#divFemaleBody h2,#divFemaleBackBody h2{font-size:28px; border:0;}
+/*#divFemaleFace,#divFemaleChestAndStomach,#divFemaleRightArm,#divFemaleLeftArm,#divFemaleLeftLeg,#divFemaleGenitalia,#divFemaleRightFoot,#divFemaleLeftFoot,#divMaleFace,
+#divMaleLeftHand,#divMaleRightHand,#divMaleRightArm,#divMaleLeftArm,#divMaleChestAndStomach,#divMaleGenitalia,#divMaleRightFoot,#divMaleLeftFoot,#divFemaleLeftHand,#divFemaleRightHand,
+#divFemaleRightLeg,#divMaleRightLeg,#divMaleLeftLeg{min-height:408px;}*/
+#pagePatientInfo{min-height:900px;}
+#pageDoctorSelectionSearch{min-height:658px;}
+#pageForgotPassword{min-height:478px;}
+#divFemaleGenitalia div.body{margin-left:48px;}
+#divMaleRightHand div.body{margin-left:10px;}
+#divFemaleLeftArm div.body{margin-left:83px;}
+#divFemaleFace div.body{margin-left:83px;}
+#divMaleBody .body{z-index:9999 !important; position:relative;}
+h2 a{font-size:28px; border:0; text-decoration:none; color:#000 !important;}
+.cretat{padding:0px; margin:0px;}
+.cretat li{text-decoration:none; display:block; float:left;}
+.cretat li.firtset{width:118px;}
+.cretat li.firtset1 input{width:171px !important;}
+#divExistingCaseData{height:auto; margin-bottom:50px;}
+.ped li{float:left; display:block; padding:0px; margin:0px;}
+.ped{float:left;  margin: 0;padding: 0;}
+#dlBillingInfo{margin-bottom:108px;}
+#divReferralCodeDT{ clear:both;}
+dd{margin:0px; padding:0px;}
+#spanPatientInfo i{padding:0px; margin:0px;}
+.divCounter{ }
+.divCounter a{color:#FFF;background:#311D68; padding:10px; float:left; margin:3px 0 0 0; text-decoration:none;width: 127px;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.lgort{ margin-left:539px !important;}
+.ui-btn {padding:8px;}
+}
+
+.iPhoneCheckContainer {
+  -webkit-transform:translate3d(0,0,0);
+  position: relative;
+  height: 27px;
+  cursor: pointer;
+  overflow: hidden; }
+  .iPhoneCheckContainer input {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+  .iPhoneCheckContainer label {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    display: block;
+    height: 27px;
+    position: absolute;
+    width: 35px;
+    top: 0;
+    padding-top: 5px;
+    overflow: hidden; }
+  .iPhoneCheckContainer, .iPhoneCheckContainer label {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none; }
+
+.iPhoneCheckDisabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5; }
+
+label.iPhoneCheckLabelOn {
+  color: white;
+  background: url('on.png?1284697268') no-repeat;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+  left: 0;
+  padding-top: 5px; }
+  label.iPhoneCheckLabelOn span {
+    padding-left: 2px; }
+label.iPhoneCheckLabelOff {
+  color: #8b8b8b;
+  background: url('off.png?1284697268') no-repeat right 0;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
+  text-align: right;
+  right: 0; }
+  label.iPhoneCheckLabelOff span {
+    padding-right: 2px; }
+
+.iPhoneCheckHandle {
+  display: block;
+  height: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: url('slider_left.png?1284697268') no-repeat;
+  padding-left: 3px; }
+
+.iPhoneCheckHandleRight {
+  height: 100%;
+  width: 100%;
+  padding-right: 3px;
+  background: url('slider_right.png?1284697268') no-repeat right 0; }
+
+.iPhoneCheckHandleCenter {
+  height: 100%;
+  width: 100%;
+  background: url('slider_center.png?1284697268'); }
+
+.iOSCheckContainer {
+  position: relative;
+  height: 27px;
+  cursor: pointer;
+  overflow: hidden; }
+  .iOSCheckContainer input {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+  .iOSCheckContainer label {
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    display: block;
+    height: 27px;
+    position: absolute;
+    width: auto;
+    top: 0;
+    padding-top: 5px;
+    overflow: hidden; }
+  .iOSCheckContainer, .iOSCheckContainer label {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none; }
+
+.iOSCheckDisabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5; }
+
+label.iOSCheckLabelOn {
+  color: white;
+  background: url('on.png?1284697268') no-repeat;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+  left: 0;
+  padding-top: 5px; }
+  label.iOSCheckLabelOn span {
+    padding-left: 2px; }
+label.iOSCheckLabelOff {
+  color: #8b8b8b;
+  background: url('off.png?1284697268') no-repeat right 0;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
+  text-align: right;
+  right: 0; }
+  label.iOSCheckLabelOff span {
+    padding-right: 2px; }
+
+.iOSCheckHandle {
+  display: block;
+  height: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: url('slider_left.png?1284697268') no-repeat;
+  padding-left: 3px; }
+
+.iOSCheckHandleRight {
+  height: 100%;
+  width: 100%;
+  padding-right: 3px;
+  background: url('slider_right.png?1284697268') no-repeat right 0; }
+
+.iOSCheckHandleCenter {
+  height: 100%;
+  width: 100%;
+  background: url('slider_center.png?1284697268'); }
+  
+  
+#jQUi{width:999px;min-height:700px; margin:0 auto; position:relative!important;}

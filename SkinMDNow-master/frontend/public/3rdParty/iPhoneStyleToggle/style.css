@@ -1,0 +1,349 @@
+.ui-body-c,.ui-overlay-c{ /*background:#FFFFFF!important;*/
+background-color: #fff;}
+#headertop{ background:#FFFFFF; width:100%; height:77px; border-bottom: 1px solid #efefefef}
+#custom_header{width:999px; height:auto; margin:0px auto;}
+.footer{height:auto; color:#ccc;font-size:18px; padding:10px 0 0 0;text-align:center}  
+#pageIndex{min-height:501px;-webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);}
+#howitworks{min-height:483px;}
+#pageForgotPassword, #pageLogin{min-height:480px;
+    min-height: 480px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    margin-top: -21px;
+    background-color: #FFFFFF;
+    width: 1000px;
+    margin-bottom: 123px;
+  }
+/*.how_title:hover {background-color: #4482FF};*/
+/*#divMaleBody{min-height:458px;}*/
+#divMaleBackBody,#divFemaleBackBody{min-height:478px;}
+/*#divMaleBack,.cnvclassMB2002{width:260px !important;}*/
+#pageCreateNew{min-height:980px;  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); background-color: #FFFFFF;}
+/* #pageTellUsMore{min-height:658px;} */
+#divFemaleBody{min-height:458px;}
+#divMaleBody h2,#divMaleBackBody h2,#divFemaleBody h2,#divFemaleBackBody h2{font-size:16px; border:0;}
+/*#divFemaleFace,#divFemaleChestAndStomach,#divFemaleRightArm,#divFemaleLeftArm,#divFemaleLeftLeg,#divFemaleGenitalia,#divFemaleRightFoot,#divFemaleLeftFoot,#divMaleFace,
+#divMaleLeftHand,#divMaleRightHand,#divMaleRightArm,#divMaleLeftArm,#divMaleChestAndStomach,#divMaleGenitalia,#divMaleRightFoot,#divMaleLeftFoot,#divFemaleLeftHand,#divFemaleRightHand,
+#divFemaleRightLeg,#divMaleRightLeg,#divMaleLeftLeg{min-height:408px;}*/
+#pagePatientInfo{/*min-height:900px;*/ min-height: 732px;}
+#pageDoctorSelectionSearch{min-height:700px;}
+#pageForgotPassword{min-height:478px;}
+/*#divFemaleGenitalia div.body{margin-left:48px;}
+#divMaleRightHand div.body{margin-left:10px;}
+#divFemaleLeftArm div.body{margin-left:83px;}
+#divFemaleFace div.body{margin-left:83px;}*/
+#divMaleBody .body{z-index:9999 !important; position:relative;}
+h2 a{font-size:28px; border:0; text-decoration:none; color:#000 !important;}
+.cretat{padding:0px; margin:0px;}
+.cretat li{text-decoration:none; display:block; float:left;}
+.cretat li.firtset{width:118px;}
+.cretat li.firtset1 input{width:171px !important;}
+#divExistingCaseData{height:auto; margin-bottom:50px;cursor:pointer; margin-top:30px;}
+#listPhotos li{cursor:pointer;}
+.ped li{float:left; display:block; padding:0px; margin:0px;}
+.ped{float:left;  margin: 0;padding: 0;}
+#dlBillingInfo{margin-bottom:108px;}
+#divReferralCodeDT{ clear:both;}
+dd{margin:0px; padding:0px;}
+#spanPatientInfo i{padding:0px; margin:0px;}
+.divCounter{ }
+.divCounter a{color:#312769; padding:10px;margin-top: 86px !important;
+    margin-left: 72px !important; float:left; margin:3px 0 0 0; text-decoration:none;width: 127px;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.lgort{ margin-left:539px !important;}
+.ui-btn {padding:8px;}
+}
+
+.iPhoneCheckContainer {
+  -webkit-transform:translate3d(0,0,0);
+  position: relative;
+  height: 27px;
+  cursor: pointer;
+  overflow: hidden; }
+  .iPhoneCheckContainer input {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+  .iPhoneCheckContainer label {
+    white-space: nowrap;
+    font-size: 14px;
+    /* font-weight: bold; */
+    font-family: Helvetica,Arial,sans-serif;
+    cursor: pointer;
+    display: block;
+    height: 27px;
+    position: absolute;
+    width: 35px;
+    top: 0;
+   padding-top: 5px; 
+    overflow: hidden; }
+  .iPhoneCheckContainer, .iPhoneCheckContainer label {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none; }
+
+.iPhoneCheckDisabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5; }
+
+label.iPhoneCheckLabelOn {
+  color: white;
+  background: url('on.png?1284697268') no-repeat;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+  left: 0;
+  padding-top: 5px; }
+  label.iPhoneCheckLabelOn span {
+    padding-left: 2px; }
+label.iPhoneCheckLabelOff {
+  color: #8b8b8b;
+  background: url('off.png?1284697268') no-repeat right 0;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
+  text-align: right;
+  right: 0; }
+  label.iPhoneCheckLabelOff span {
+    padding-right: 2px; }
+
+.iPhoneCheckHandle {
+  display: block;
+  height: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: url('slider_left.png?1284697268') no-repeat;
+  padding-left: 3px; }
+
+.iPhoneCheckHandleRight {
+  height: 100%;
+  width: 100%;
+  padding-right: 3px;
+  background: url('slider_right.png?1284697268') no-repeat right 0; }
+
+.iPhoneCheckHandleCenter {
+  height: 100%;
+  width: 100%;
+  background: url('slider_center.png?1284697268'); }
+
+.iOSCheckContainer {
+  position: relative;
+  height: 27px;
+  cursor: pointer;
+  overflow: hidden; }
+  .iOSCheckContainer input {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+  .iOSCheckContainer label {
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+    font-family: Helvetica,Arial,sans-serif;
+    cursor: pointer;
+    display: block;
+    height: 27px;
+    position: absolute;
+    width: auto;
+    top: 0;
+    padding-top: 5px;
+    overflow: hidden; }
+  .iOSCheckContainer, .iOSCheckContainer label {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none; }
+
+.iOSCheckDisabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5; }
+
+label.iOSCheckLabelOn {
+  color: white;
+  background: url('on.png?1284697268') no-repeat;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+  left: 0;
+  padding-top: 5px; }
+  label.iOSCheckLabelOn span {
+    padding-left: 2px; }
+label.iOSCheckLabelOff {
+  color: #8b8b8b;
+  background: url('off.png?1284697268') no-repeat right 0;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
+  text-align: right;
+  right: 0; }
+  label.iOSCheckLabelOff span {
+    padding-right: 2px; }
+
+.iOSCheckHandle {
+  display: block;
+  height: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: url('slider_left.png?1284697268') no-repeat;
+  padding-left: 3px; }
+
+.iOSCheckHandleRight {
+  height: 100%;
+  width: 100%;
+  padding-right: 3px;
+  background: url('slider_right.png?1284697268') no-repeat right 0; }
+
+.iOSCheckHandleCenter {
+  height: 100%;
+  width: 100%;
+  background: url('slider_center.png?1284697268'); }
+  
+  
+#jQUi{width:999px;min-height:500px; margin:0 auto; position:relative!important; }
+
+/*#drpChiefComplaint {background:#eeeeee !important; text-align:left !important;}
+#drpChiefComplaint option:hover{ background-color:#F00 !important;-webkit-appearance: none; z-index:9999; position:relative; }
+option[selected] { background: #f00;} 
+.ccmp{background:none !important; text-align:left !important;}
+#drpChiefComplaint option:focus{background-color: transparent !important;}*/
+
+/* @media(max-width: 640px){
+  #pageIndex{
+    width: 300px;
+    font-size:10px;
+    margin-left: 30px;
+  }
+.div_in_content {
+    
+    padding-left: 10px !important;
+    width: 500px;
+    font-size: 10px !important;
+    margin: 0px !important
+
+}
+.how_title {
+  
+  font-size: 15px !important;
+ 
+}
+.panelClass {
+  top: 0px;
+  min-height: 100px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  position: absolute;
+  width: 981px;
+  margin-left: 0px;
+}
+} */
+#drpPharmacy{
+  margin-left: 40px;
+  width: 420px;
+}
+/* .ui-select{
+  margin-left: 41px;
+  width: 349px;
+} */
+
+.multi{
+  width: 300px;
+  padding: 3px;
+  margin-left: 30px;
+}
+.getindex{
+  width: 200px;
+  margin-left: 29px;
+}
+
+.tipsfor {
+  /* background: url(images/btn_6.png) repeat-x scroll 0 0 transparent; */
+  background-color: #311D68;
+  color: #FFFFFF !important;
+  float: left;
+  font-family: 'roboto', senserif;
+  font-size: 44px;
+  font-weight: normal !important;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 190px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border-radius: 7px 7px 7px 7px;
+  margin-left: 393px;
+  margin-top: -25px;
+}
+
+input#images {
+  display: block;
+  clear: both;
+  margin: 52px 0;
+  text-align: center;
+  width: 20%;
+  margin-left: 260px;
+  color:transparent;
+}
+
+.tipsfor a {
+  color: #FFFFFF !important;
+  display: block;
+  font-size: 14px;
+  font-weight: normal !important;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 8px;
+  width: 331px;
+}
+#image-list li {
+  border: 1px solid #a7c8de;
+  clear: both;
+  list-style: none outside none;
+  overflow: hidden;
+  padding: 15px !important;
+  box-shadow: 1px 1px 1px 1px;
+}
+.ui-checkbox input, .ui-radio input {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 0;
+  outline: 0!important;
+  z-index: 1;
+}
+.ui-btn-text {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  left: 15px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+#dtPharmacy{
+  font-size: 16px;
+    text-align: justify;
+    margin-left: -45px;
+    width: 600px;
+}
+#divPagePharmacyTitle{
+  width: 350px;
+  font-size: 16.16px;
+  /* text-align: center; */
+  margin-left:293px;
+}
+#chkStateAgree {
+  z-index: 99;
+  margin-top: -27px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+
+.rockon{
+  float: left;
+}
