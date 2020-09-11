@@ -205,7 +205,7 @@ class AuthController extends Controller
         $userId = $this->guard()->user()->id;//looged_in user ID
         
         $passwordUser = trim($this->getRandomStr());
-
+z
         $insertData = array();
         $insertData['user_type'] = $input['user_type'];
         $insertData['fname'] = $input['fname'];
@@ -301,6 +301,9 @@ class AuthController extends Controller
 
         if(!empty($update_data['speciality'])){
             $update_data['speciality'] = implode(',', $update_data['speciality']);
+        }
+        else{
+            unset($update_data['speciality']);
         }
         
         $user = User::where('id', $id)->update($update_data);

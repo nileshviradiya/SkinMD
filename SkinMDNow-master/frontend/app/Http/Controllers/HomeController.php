@@ -1046,7 +1046,7 @@ class HomeController extends Controller
                     CONCAT(USR.fname,' ',USR.lname) as strName,
                     USR.phone as strPhone,
                     null as strSkills,
-                    GROUP_CONCAT(SP.name) as strSpecialty,
+                    GROUP_CONCAT(DISTINCT SP.name) as strSpecialty,
                     USR.Title as strTitle
                 FROM derm_address DA
                     LEFT JOIN us_state ST ON DA.state = ST.id 

@@ -35,9 +35,7 @@ class ForgotPassword extends Component {
                 <h3>
                   <IntlMessages id="page.forgetPassSubTitle" />
                 </h3>
-                <p>
-                  <IntlMessages id="page.forgetPassDescription" />
-                </p>
+                
               </div>
 
               <div className="isoForgotPassForm">

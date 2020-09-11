@@ -100,7 +100,18 @@ jQuery.ajax({
         } else {
             if (strErrorMessage.indexOf("number is invalid") >= 0) {
                 jQuery('#page_loading').hide();
-                alert("The credit card number is invalid.")
+                //alert("The credit card number is invalid.")
+                alert("The credit card number is invalid, Please proceed again.");
+                window.location.reload();
+                //if(confirm("The credit card number is invalid, Would you like to proceed again?")){
+                    /*jQuery("#pagePharmacy").hide();
+                    jQuery('#pageChiefComplaint').hide();
+                    jQuery('#ChiefComplaintbtnProceed').hide();
+                    jQuery("#pageBillingInfo").show();*/
+                    
+                /*}else{
+                    jQuery('#ChiefComplaintbtnProceed').hide();
+                }*/
             } else {
                 jQuery('#page_loading').hide();
                 if (strErrorMessage == "Code does not exist" || strErrorMessage == "Invalid referral code entered by user" || strErrorMessage == 'Invalid XML.') {
