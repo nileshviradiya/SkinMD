@@ -466,18 +466,23 @@ jQuery(function() {
                     type: "POST",
                     data: JSON.stringify(CouponHelper),
                     contentType: "application/json; charset=utf-8",
-                    // dataType: "json",
+                    dataType: "json",
                     success: function(result) {
                         if (result.strErrorMessage == "" || result.strErrorMessage == null) {
                             jQuery('#page_loading').hide();
                             var doctor_fees_to_debit = result.physicianFees;
+                            var strDoctorName = (window.localStorage.getItem("strSelectedDoctor") != null && window.localStorage.getItem("strSelectedDoctor") != "") ? window.localStorage.getItem("strSelectedDoctor") : window.sessionStorage.getItem("strSelectedDoctor");
                             if (doctor_fees_to_debit > 0) {
                                 window.localStorage.setItem("strSelectedDoctorPrice", doctor_fees_to_debit);
-                                jQuery("#divCreditCardHeading").html("" + (window.localStorage.getItem("strSelectedDoctor") != null && window.localStorage.getItem("strSelectedDoctor") != "") ? window.localStorage.getItem("strSelectedDoctor") : window.sessionStorage.getItem("strSelectedDoctor") + " has a fee of $" + (window.localStorage.getItem("strSelectedDoctorPrice") != null && window.localStorage.getItem("strSelectedDoctorPrice") != "") ? window.localStorage.getItem("strSelectedDoctorPrice") : window.sessionStorage.getItem("strSelectedDoctorPrice") + ". Your credit card will be charged a total of $" + (window.localStorage.getItem("strSelectedDoctorPrice") != null && window.localStorage.getItem("strSelectedDoctorPrice") != "") ? window.localStorage.getItem("strSelectedDoctorPrice") : window.sessionStorage.getItem("strSelectedDoctorPrice") + ".");
+                                var strDoctorFees = (window.localStorage.getItem("strSelectedDoctorPrice") != null && window.localStorage.getItem("strSelectedDoctorPrice") != "") ? window.localStorage.getItem("strSelectedDoctorPrice") : window.sessionStorage.getItem("strSelectedDoctorPrice");
+                                
+                                jQuery("#divCreditCardHeading").html("" + strDoctorName + " has a fee of $" + strDoctorFees + ". Your credit card will be charged a total of $" + doctor_fees_to_debit + ".");
                             } else {
                                 doctor_fees_to_debit = 0;
                                 window.localStorage.setItem("strSelectedDoctorPrice", doctor_fees_to_debit);
-                                jQuery("#divCreditCardHeading").html("" + (window.localStorage.getItem("strSelectedDoctor") != null && window.localStorage.getItem("strSelectedDoctor") != "") ? window.localStorage.getItem("strSelectedDoctor") : window.sessionStorage.getItem("strSelectedDoctor") + " has a fee of $" + (window.localStorage.getItem("strSelectedDoctorPrice") != null && window.localStorage.getItem("strSelectedDoctorPrice") != "") ? window.localStorage.getItem("strSelectedDoctorPrice") : window.sessionStorage.getItem("strSelectedDoctorPrice") + ". Your credit card will not be charged. However, we still need you to fill the information requested below for verification purposes.");
+                                var strDoctorFees = (window.localStorage.getItem("strSelectedDoctorPrice") != null && window.localStorage.getItem("strSelectedDoctorPrice") != "") ? window.localStorage.getItem("strSelectedDoctorPrice") : window.sessionStorage.getItem("strSelectedDoctorPrice");
+
+                                jQuery("#divCreditCardHeading").html("" + strDoctorName + " has a fee of $" + strDoctorFees + ". Your credit card will not be charged. However, we still need you to fill the information requested below for verification purposes.");
                             }
                             couponapplied = 0;
                             window.localStorage.setItem("codeType", "DISCOUNT");
@@ -1274,7 +1279,8 @@ function cancelAccount() {
 function addAccount() {
     DestroyCalendar();
     var strAge = checkAge(jQuery('#txtNewDateOfBirth').val());
-    if (strAge >= 18) {
+    console.log(strAge);
+    if (strAge > 19) {
         if (jQuery('#txtNewFirstName').val() == "" || jQuery('#txtNewLastName').val() == "") {
             alert("Please enter First Name & Last Name");
 
@@ -1287,7 +1293,7 @@ function addAccount() {
         } else if (jQuery('#txtNewUsername').val() == "") {
             alert("Please enter Username.");
         } else if (jQuery('#txtNewUsername').val().length < 5) {
-            alert("Username length should be grether 4.");
+            alert("Username length should be greater than 4.");
         } else {
             jQuery.fn.fnAddAccount();
         }

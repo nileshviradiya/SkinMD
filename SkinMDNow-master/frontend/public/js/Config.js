@@ -9,7 +9,7 @@ var skinmdserviceURL = "https://skinmdnow.nuvolatek.net/frontend/public/api/";
 var API_SERVER = "https://skinmdnow.nuvolatek.net/server/public/api/"; //Backend server URL for case images upload
 
  
-var strGlobalErrorMessage = "Server Response Error";
+var strGlobalErrorMessage = "Server Error - Please reload page,and try again.";
 
 jQuery.support.cors = true;
 

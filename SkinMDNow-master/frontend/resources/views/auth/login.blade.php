@@ -18,11 +18,11 @@
             
             <h3 class="h3St">Login Now</h3>
             <div class="loginDiv">
-                <input id="username" type="text" class="jq-ui-forms" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus placeholder="Username" onKeyPress="handleKeyPress(event);">
+                <input id="username" type="text" class="jq-ui-forms" name="username" style="margin-bottom: 6px !important;" value="{{ old('username') }}" required autocomplete="username" autofocus placeholder="Username" onKeyPress="handleKeyPress(event);">
                     @error('username')
                         <div class="errorDiv">{{ $message }}</div>
                     @enderror
-                <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password"  placeholder="Password"  onKeyPress="handleKeyPress(event);">
+                <input id="password" type="password" class="form-control" name="password" style="margin-bottom: 6px !important;" required autocomplete="current-password"  placeholder="Password"  onKeyPress="handleKeyPress(event);">
                     @error('password')
                         <div class="errorDiv">{{ $message }}</div>
                     @enderror
@@ -36,6 +36,7 @@
                 
                 <div style="margin-top: 22px;margin-left: -37px;"> 
                     <a id='btnStartNew' onClick="StartNewCaseLoginScreen()" href="" class="button" style="">Start New Request</a> 
+                    <br clear="all">
                     <br clear="all">
                     <br clear="all">
                 </div>

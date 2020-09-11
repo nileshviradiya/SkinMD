@@ -136,7 +136,9 @@ jQuery(function() {
               } else {
                   if (strErrorMessage.indexOf("number is invalid") >= 0) {
                       jQuery('#page_loading').hide();
-                      alert("The credit card number is invalid.")
+                      //alert("The credit card number is invalid.")
+                      alert("The credit card number is invalid, Please proceed again.");
+                      window.location.reload();
                   } else {
                       jQuery('#page_loading').hide();
                       if (strErrorMessage == "Code does not exist" || strErrorMessage == "Invalid referral code entered by user" || strErrorMessage == 'Invalid XML.') {
