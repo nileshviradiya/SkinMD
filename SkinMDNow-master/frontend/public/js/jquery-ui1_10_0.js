@@ -4729,7 +4729,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 
 })(jQuery);
 
-;(jQuery.effects || (function($, undefined) {
+(jQuery.effects || (function($, undefined) {
 
 var dataSpace = "ui-effects-";
 

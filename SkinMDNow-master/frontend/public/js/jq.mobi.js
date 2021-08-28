@@ -181,7 +181,7 @@ if (!window.jq || typeof (jq) !== "function") {
  			} catch(e){
  				return [];
  			}
- 		};
+ 		}
         function _selector(selector, what) {
             var dom;
 
